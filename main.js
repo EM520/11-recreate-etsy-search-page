@@ -1,3 +1,14 @@
+// const str=[1,2,3].map(item=>{
+//     return `<div class="item">
+//     <div >
+//     <img src="${item.Images[0].url_170x135}">
+//     </div>
+//     `
+// }).join('')
+
+// document.querySelector('#grid1').innerHTML= str
+
+
 const products = items.results
 console.log(products)
 const shops = items.shop
@@ -12,9 +23,9 @@ const productHtml = products.map((item) =>
     <strong>$${item.price}</strong>
     </div>
     `
-
 )
-//console.log(productHtml)
+console.log(productHtml)
 
 //show up content on html 
 document.querySelector('#grid').innerHTML= productHtml.join('')
+

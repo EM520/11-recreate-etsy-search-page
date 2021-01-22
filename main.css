@@ -3,19 +3,77 @@
     padding: 0;
     box-sizing: border-box;
 }
-#grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    column-gap:5px;
-    justify-items: center;
 
-    
+h1{
+    color:#F1641E;
+    font-size: 40px;
+    margin-left:25px;
+    padding-bottom:30px;
+    padding-top:25px;
+    font-family: serif;
 }
 
 
-.title{
+#nav{
+    border-bottom:3px solid rgb(221, 219, 219);
+    padding: 10px;
+    margin-bottom:25px;
+    font-family: "Graphik Webfont",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Segoe UI","Helvetica",Arial,sans-serif;
+
+    font-size: 13px;
+    line-height: 18px;
+}
+
+#nav div{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     
-    margin: 20px 10px; 
+}
+
+#nav input{
+    border: 1px solid rgb(199, 191, 191);
+    font-size: 16px;
+    border-radius: 25px;
+    padding-left: 15px;
+    margin-left: 10px;
+    width:70%;
+    height:45px;
+    background-color: rgb(243, 241, 241);
+}
+
+#nav ul {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+.grid-container{
+width:80%;
+margin:0 auto;
+}
+
+#grid1{
+    display:grid;
+    margin-top:20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+}
+#grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap:10px;
+    justify-content: center;
+    
+}
+
+.product-item{
+    width: 200px;
+    
+}
+.title{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -23,15 +81,15 @@
 
 .product-item img{
     width:100%;
-    border:3px solid red;
+    
 }
 
 
 .product-bg{
     background-size:cover ;
-    height: 180px;
-    
-    border:5px solid red;
+    height: 200px;
+    /* width: 100%; */
+    border:1px solid red;
   
   
 }
