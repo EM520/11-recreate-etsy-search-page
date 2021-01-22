@@ -6,28 +6,56 @@
 
 h1{
     color:#F1641E;
-    font-size: 40px;
-    margin-left:25px;
-    padding-bottom:30px;
-    padding-top:25px;
+    font-size: 45px;
+    margin-left:42px;
+    padding-bottom:20px;
+    padding-top:30px;
     font-family: serif;
 }
 
 
 #nav{
     border-bottom:3px solid rgb(221, 219, 219);
-    padding: 10px;
-    margin-bottom:25px;
+    padding: 2px;
+    margin-bottom:70px;
     font-family: "Graphik Webfont",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Segoe UI","Helvetica",Arial,sans-serif;
 
-    font-size: 13px;
-    line-height: 18px;
+    font-size: 15px;
+    line-height: 20px;
 }
 
-#nav div{
+.nav-label .dropdown {
+    display: none;
+}
+
+.nav-label .dropdown {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: "Graphik Webfont",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Segoe UI","Helvetica",Arial,sans-serif;
+    font-size:14px;
+    font-weight:lighter;
+    font-style: normal;
+
+};
+
+
+.nav-label span:hover > .dropdown {
+    display: flex;
+}
+
+
+
+#nav .topnav{
     display:flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     
 }
@@ -39,9 +67,11 @@ h1{
     padding-left: 15px;
     margin-left: 10px;
     width:70%;
-    height:45px;
+    height:50px;
     background-color: rgb(243, 241, 241);
 }
+
+
 
 #nav ul {
     display:flex;
@@ -50,10 +80,12 @@ h1{
     list-style-type: none;
 }
 
-.grid-container{
+/* .grid-contain{
 width:80%;
+height: 200px;
 margin:0 auto;
-}
+border:3px solid red;
+} */
 
 #grid1{
     display:grid;
