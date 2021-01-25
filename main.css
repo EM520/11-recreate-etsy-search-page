@@ -3,25 +3,94 @@
     padding: 0;
     box-sizing: border-box;
 }
+header{
+    border-bottom: 2px solid rgb(185, 179, 179);
+    margin-bottom: 80px;
+    box-shadow: 0 2px 2px rgb(252, 249, 249);
+    height: 108px;
+}
 
 h1{
     color:#F1641E;
     font-size: 45px;
     margin-left:42px;
+    margin-right: 10px;
     padding-bottom:20px;
-    padding-top:30px;
+    padding-top:10px;
     font-family: serif;
+}
+#span-advanced-search{
+    display: inline-block;
+    width: 1130px;
+    border-radius: 25px;
+    height: 50px;
+    text-indent: 50px;
+    border: 1px solid rgb(199, 191, 191);
+    background-color: rgb(243, 241, 241);
+    font-size: 16px;
+}
+
+.topnav{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#nav1{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    
 }
 
 
-#nav{
-    border-bottom:3px solid rgb(221, 219, 219);
-    padding: 2px;
-    margin-bottom:70px;
-    font-family: "Graphik Webfont",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Segoe UI","Helvetica",Arial,sans-serif;
 
+.input-icons {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    position: relative;
+    left: -120px;
+    padding:2px;
+    top: 1px;
+    color:gray; 
+    height: 20px;
+    
+    
+    
+}
+.input-icons span a{
+    text-decoration: none ;
+    color:black;
+    
+}
+.input-icons span{
+    margin:20px;
+}
+
+.nav-container{
+    display: flex;
+    flex-direction: column;
+
+    /* border-bottom:3px solid rgb(221, 219, 219); */
+    padding: 2px;
+    margin-top: 15px;
+    margin-bottom:80px;
+    font-family: "Graphik Webfont",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Segoe UI","Helvetica",Arial,sans-serif;
     font-size: 15px;
-    line-height: 20px;
+    line-height: 25px;
+    width:90%;
+    height:100px;
+}
+#nav2 .nav-list {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+    font-weight: lighter;
+    padding:5px;
+    
 }
 
 .nav-label .dropdown {
@@ -34,7 +103,7 @@ h1{
     right: 0;
 }
 
-.nav-list {
+.nav-list ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -42,6 +111,8 @@ h1{
     font-size:14px;
     font-weight:lighter;
     font-style: normal;
+    margin-left:50px;
+    list-style-type:none;
 
 };
 
@@ -60,32 +131,13 @@ h1{
     
 }
 
-#nav input{
-    border: 1px solid rgb(199, 191, 191);
-    font-size: 16px;
-    border-radius: 25px;
-    padding-left: 15px;
-    margin-left: 10px;
-    width:70%;
-    height:50px;
-    background-color: rgb(243, 241, 241);
-}
 
 
 
-#nav ul {
-    display:flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    list-style-type: none;
-}
 
-/* .grid-contain{
-width:80%;
-height: 200px;
-margin:0 auto;
-border:3px solid red;
-} */
+
+
+
 
 #grid1{
     display:grid;
@@ -93,16 +145,23 @@ border:3px solid red;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 10px;
 }
-#grid{
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+
+#grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    column-gap:10px;
-    justify-content: center;
+    column-gap:20px;
     
 }
 
+
 .product-item{
-    width: 200px;
+    overflow: hidden;
     
 }
 .title{
@@ -121,20 +180,36 @@ border:3px solid red;
     background-size:cover ;
     height: 200px;
     /* width: 100%; */
-    border:1px solid red;
+    border-radius: 3px;
   
   
 }
 
 h2{
     font-size: 15px;
+    font-style: normal;
+    font-weight: lighter;
+    font-family: "Graphik Webfont",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Segoe UI","Helvetica",Arial,sans-serif;;
+    margin:5px;
+}
+.product-item p{
+    font-size: 12px;
+    font-style: normal;
     font-weight: lighter;
     font-family: "Graphik Webfont",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Segoe UI","Helvetica",Arial,sans-serif;;
     margin:5px;
 }
 strong{
     font-family: "Graphik Webfont",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Segoe UI","Helvetica",Arial,sans-serif;
+    font-style: normal;
    
 }
 
- 
+#footer .container{
+    width:95%;
+    height: 300px;
+    border-top: 2px solid lightcyan;
+    border:3px solid rgb(251, 252, 253);
+    background-color: rgb(106, 153, 223);
+    margin-top: 20px;
+}

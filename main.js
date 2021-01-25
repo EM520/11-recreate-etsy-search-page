@@ -10,7 +10,7 @@
 
 
 const products = items.results
-console.log(products)
+// console.log(products)
 const shops = items.shop
 //console.log(shops)
 // grab title, image, price
@@ -19,12 +19,19 @@ const productHtml = products.map((item) =>
     <div class="product-bg" style="background-image:url(${item.Images[0].url_fullxfull})"></div>
     <h2 class="title">${item.title}</h2>
     <p> ${item.Shop.shop_name}</p>
-    <p> ${item.views} </p>
+    <div>
+    <span class="fa fa-star fa-sm"></span>
+    <span class="fa fa-star fa-sm"></span>
+    <span class="fa fa-star fa-sm"></span>
+    <span class="fa fa-star fa-sm"></span>
+    <span class="fa fa-star fa-sm"></span>
+    <span> (${item.views}) </span>
+    </div>
     <strong>$${item.price}</strong>
     </div>
     `
 )
-console.log(productHtml)
+// console.log(productHtml)
 
 //show up content on html 
 document.querySelector('#grid').innerHTML= productHtml.join('')
